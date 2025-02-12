@@ -78,11 +78,11 @@ class PayloadConfig {
       });
       v4CharPosCaptions.add({
         'char_caption': result.caption,
-        'centers': posAsDouble,
+        'centers': [posAsDouble], // 修改这里，将posAsDouble包装在数组中
       });
       v4CharNegCaptions.add({
         'char_caption': result.uc,
-        'centers': posAsDouble,
+        'centers': [posAsDouble], // 修改这里，将posAsDouble包装在数组中
       });
     }
     final v4Prompt = {
@@ -110,7 +110,7 @@ class PayloadConfig {
       payload: {
         'input': basePromptResult.toPrompt(),
         'model': paramConfig.model,
-        'action': 'generation',
+        'action': 'generate',
         'parameters': paramPayload,
       },
     );
