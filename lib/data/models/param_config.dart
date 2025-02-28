@@ -59,12 +59,12 @@ class ParamConfig {
   bool legacy;
   bool addOriginalImage;
 
-  String model = 'nai-diffusion-4-curated-preview';
+  String model = 'nai-diffusion-4-full';
 
   bool autoPosition;
 
   ParamConfig({
-    this.model = 'nai-diffusion-4-curated-preview',
+    this.model = 'nai-diffusion-4-full',
     this.sizes = const [GenerationSize(height: 1216, width: 832)],
     this.scale = 6.5,
     this.sampler = 'k_euler_ancestral',
