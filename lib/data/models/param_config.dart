@@ -199,7 +199,7 @@ class ParamConfig {
 
   factory ParamConfig.fromJson(Map<String, dynamic> json) {
     return ParamConfig(
-      model: json['model'] ?? 'nai-diffusion-4-curated-preview',
+      model: json['model'] ?? 'nai-diffusion-4-full',
       sizes: (json['sizes'] as List<dynamic>?)
               ?.map((elem) => GenerationSize.fromJson(elem))
               .toList() ??
