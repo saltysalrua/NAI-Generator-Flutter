@@ -11,7 +11,7 @@ const models = [
   'nai-diffusion-4-full'
   'nai-diffusion-4-curated-preview',
   'nai-diffusion-3',
-  'nai-diffusion-furry-3'
+  'nai-diffusion-4-full'
 ];
 const samplers = [
   'k_euler',
